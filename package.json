@@ -1,0 +1,18 @@
+{
+  "name": "photo-tag",
+  "version": "0.0.1",
+  "description": "Share and search photos by tags.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "photo",
+    "hashtag",
+    "tag",
+    "ml"
+  ],
+  "author": "SeungBin Kim <seungbin0508@gmail.com> https://github.com/seungbin0508",
+  "license": "ISC",
+  "type": "module"
+}
