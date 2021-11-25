@@ -33,5 +33,6 @@ Web photo share and search service by auto generated tags from image using [Kaka
 ## Architecture
 
 ## Database Structure
+![Database Structure Image](https://user-images.githubusercontent.com/24871719/143405318-332ef190-37ab-4559-b73b-daed56c8ecd6.png)
 
 ## SampleCodes
