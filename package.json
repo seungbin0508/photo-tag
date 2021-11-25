@@ -14,5 +14,8 @@
   ],
   "author": "SeungBin Kim <seungbin0508@gmail.com> https://github.com/seungbin0508",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
