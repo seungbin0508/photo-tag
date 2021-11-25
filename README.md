@@ -20,3 +20,18 @@ Web photo share and search service by auto generated tags from image using [Kaka
 | Project Setting | November 2021 | On Going | Basic architecture settings, readme, etc. |
 
 
+## Server Environment
+|Environment|Content|
+| --- | ---- |
+| Language | Node.js 17.x (ES 2021) |
+| Framework | Express.js 4.17 |
+| Main Database | MongoDB 4.2 ([MongoDB Atlas](https://www.mongodb.com/atlas)) |
+| Sub Database | Redis 6.2.3 ([Redis Cloud](https://app.redislabs.com/))
+| Deployment | AWS EC2, S3 (for images) |
+| Image Analysing API | [Kakao](https://developers.kakao.com) |
+
+## Architecture
+
+## Database Structure
+
+## SampleCodes
