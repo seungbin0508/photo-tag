@@ -5,6 +5,20 @@
 
 import db from './index.js'
 import chalk from 'chalk'
+import readline from 'readline/promises'
+
+while (true) {
+	const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+	console.log(chalk.yellow('This will delete all collections in the database (if exist).'))
+	const answer = await rl.question('Would you like to continue? [Y/N]:  ')
+	if (answer.toUpperCase() === 'N') {
+		console.group()
+		console.log('Creating collections canceled.')
+		process.exit()
+	}
+	if (answer.toUpperCase() === 'Y') break
+	console.log(chalk.red('Invalid input! Either type Y or N.'))
+}
 
 console.log(chalk.blue('Starting to create collections with validators and indexes.'))
 console.group()
