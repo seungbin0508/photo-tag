@@ -10,9 +10,7 @@ console.log(chalk.blue('Starting to create collections with validators and index
 console.group()
 
 const collections = (await db.listCollections().toArray()).map(v => v.name)
-
 console.log(`Dropping all existing collections (if exist): ${collections.join(', ')}.`)
-
 for (const collection of collections) {
 	await db.collection(collection).drop()
 }
@@ -207,3 +205,4 @@ const newCollections = (await db.listCollections().toArray()).map(v => v.name)
 console.log(chalk.green(`All collections are created. Created collections: ${newCollections.join(', ')}.`))
 console.groupEnd()
 
+process.exit()
