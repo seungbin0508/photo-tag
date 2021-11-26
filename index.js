@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import morgan from 'morgan'
 import fs from 'fs'
 import path from 'path'
+import router from './routers/index.js'
 
 dotenv.config()
 
@@ -16,7 +17,8 @@ const accessLogStream = fs.createWriteStream(logPath, { flags: 'a' })
 app.use(morgan('combined', { stream: accessLogStream}))
 
 // Router
-
+app.use(express.static('public'))
+app.use('/api', router)
 app.get('/', (req, res, next) => {
 	res.send('Hello')
 })
